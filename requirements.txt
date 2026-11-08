@@ -1,0 +1,5 @@
+# Installed on top of the R1-V environment (see README).
+fastdtw
+scipy
+sentence-transformers
+qwen-vl-utils

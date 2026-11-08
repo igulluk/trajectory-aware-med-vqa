@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Improving Medical VQA through Trajectory-Aware Process Supervision"
+authors:
+  - family-names: Gulluk
+    given-names: Halil Ibrahim
+    affiliation: "Department of Electrical Engineering, Stanford University"
+  - family-names: Gevaert
+    given-names: Olivier
+    affiliation: "Department of Computational Medicine, Stanford University"
+license: Apache-2.0
+repository-code: "https://github.com/igulluk/trajectory-aware-med-vqa"
+preferred-citation:
+  type: conference-paper
+  title: "Improving Medical VQA through Trajectory-Aware Process Supervision"
+  authors:
+    - family-names: Gulluk
+      given-names: Halil Ibrahim
+    - family-names: Gevaert
+      given-names: Olivier
+  collection-title: "The Third Workshop on GenAI for Health: Agentic Systems, Clinical Trust, and Future Potential, NeurIPS 2026"
+  year: 2026

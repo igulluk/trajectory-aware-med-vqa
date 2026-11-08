@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.ipynb_checkpoints/
+
+checkpoints/
+results/
+wandb/
+*.log
+
+# Medical images are not redistributed; see README.
+VQA-RAD/
+Slake-VQA/
+Path-VQA/
+PMC-VQA/
+OmniMedVQA/
+VQA-MED-2019/

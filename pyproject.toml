@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medvqa"
+version = "1.0.0"
+description = "Trajectory-aware process supervision for medical visual question answering"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Halil Ibrahim Gulluk", email = "gulluk@stanford.edu" },
+    { name = "Olivier Gevaert", email = "ogevaert@stanford.edu" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "fastdtw",
+    "sentence-transformers",
+    "datasets",
+    "transformers>=4.49",
+    "peft",
+    "qwen-vl-utils",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.urls]
+Repository = "https://github.com/igulluk/trajectory-aware-med-vqa"
+
+[tool.setuptools.packages.find]
+include = ["medvqa*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["medvqa"]
